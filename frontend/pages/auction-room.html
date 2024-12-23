@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Room</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="../assets/js/auction.js" defer></script>
+</head>
+<body>
+    <div id="auction-room">
+        <h1>Auction Room</h1>
+        <p id="auction-info">Auction details will appear here...</p>
+        <form id="bid-form">
+            <label for="quantity">Quantity (Min-Max):</label>
+            <input type="number" id="quantity" name="quantity" required>
+            
+            <label for="price">Price Bid (Min-Max):</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+            
+            <button type="submit">Submit Bid</button>
+        </form>
+        <div id="bid-status">
+            <h3>Your Bids</h3>
+            <ul id="bid-history"></ul>
+        </div>
+        <div id="live-stats">
+            <h3>Live Auction Stats</h3>
+            <p>Total Quantity Available: <span id="total-quantity"></span></p>
+            <p>Current Highest Bid: <span id="highest-bid"></span></p>
+            <p>Time Remaining: <span id="time-remaining"></span></p>
+        </div>
+    </div>
+</body>
+</html>

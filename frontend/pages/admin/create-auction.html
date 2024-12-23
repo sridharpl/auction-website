@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Auction</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+    <div id="create-auction">
+        <h1>Create New Auction</h1>
+        <form id="create-auction-form">
+            <label for="auction-details">Auction Details:</label>
+            <textarea id="auction-details" name="auction-details" required></textarea>
+            
+            <label for="total-quantity">Total Quantity Available:</label>
+            <input type="number" id="total-quantity" name="total-quantity" required>
+            
+            <label for="max-quantity">Max Quantity per Bidder:</label>
+            <input type="number" id="max-quantity" name="max-quantity" required>
+            
+            <label for="price-range">Price Range (Min-Max):</label>
+            <input type="text" id="price-range" name="price-range" placeholder="e.g., 10.00-50.00" required>
+            
+            <label for="increment">Minimum Price Increment:</label>
+            <input type="number" id="increment" name="increment" step="0.01" required>
+            
+            <button type="submit">Create Auction</button>
+        </form>
+    </div>
+</body>
+</html>
