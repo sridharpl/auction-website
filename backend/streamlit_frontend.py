@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-BACKEND_URL = "http://localhost:5000"  # Change to your backend's deployed URL if necessary
+BACKEND_URL = "https://auction-website.streamlit.app/"  # Change to your backend's deployed URL if necessary
 
 def show_authentication_page():
     st.title("Auction Portal Login")
