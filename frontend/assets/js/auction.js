@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://your-backend-url.com"; // Replace with your backend URL
+const BACKEND_URL = "https://auction-website.streamlit.app/";
 
 const bidForm = document.getElementById('bid-form');
 const bidHistory = document.getElementById('bid-history');
